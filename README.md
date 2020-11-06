@@ -4,7 +4,7 @@
 
 A project activity for [Girls Into Coding](https://www.girlsintocoding.com/) using a online version of the free open source [Webots](https://www.cyberbotics.com/) robot simulator.
 
-This activity is generated as a webpage at [https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity2/](https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity2/)
+This activity is generated as a webpage at [https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity3/](https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity3/)
 
 ## Contents
 
@@ -22,7 +22,7 @@ This activity uses [robotbenchmark](https://robotbenchmark.net/), which is a onl
 
 ## Accessing the activity webpage
 
-Simply point your browser to [https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity2/](https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity2/)
+Simply point your browser to [https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity3/](https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity3/)
 
 ## Contributing
 
@@ -30,7 +30,7 @@ Feel free very welcome to contribute if you find any errors in this activity, by
 
 ## Credit
 
-This activity uses bootstrap in the github pages website, thanks to [https://nicolas-van.github.io/bootstrap-4-github-pages/]()
+This activity uses bootstrap in the github pages website, thanks to [https://nicolas-van.github.io/bootstrap-4-github-pages/](https://nicolas-van.github.io/bootstrap-4-github-pages/)
 
 ## Help and updates
 
