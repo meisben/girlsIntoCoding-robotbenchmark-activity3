@@ -1,0 +1,171 @@
+"""Sample Webots controller for the girls into coding activity"""
+
+from controller import Robot
+
+
+
+
+
+def getDistance(sensor):
+    """
+    Return the distance of an obstacle for a sensor.
+
+    The value returned by the getValue() method of the distance sensors
+    corresponds to a physical value (here we have a sonar, so it is the
+    strength of the sonar ray). This function makes a conversion to a
+    distance value in meters.
+    """
+    return ((1000 - sensor.getValue()) / 1000) * 5
+
+
+# Maximum speed for the velocity value of the wheels.
+# Don't change this value.
+MAX_SPEED = 5.24
+
+# Get pointer to the robot.
+robot = Robot()
+
+# Get the time step of the current world.
+timestep = int(robot.getBasicTimeStep())
+
+# Get pointer to the robot wheels motors.
+leftWheel = robot.getMotor('left wheel')
+rightWheel = robot.getMotor('right wheel')
+
+# We will use the velocity parameter of the wheels, so we need to
+# set the target position to infinity.
+leftWheel.setPosition(float('inf'))
+rightWheel.setPosition(float('inf'))
+
+# Get and enable the distance sensors.
+frontSensor = robot.getDistanceSensor("so3")
+frontSensor.enable(timestep)
+sideSensor = robot.getDistanceSensor("so0")
+sideSensor.enable(timestep)
+
+#### BMC CODE !! ------------------------
+
+# Put all the sensors in an array
+sensors = []
+sensors.append(robot.getDistanceSensor("so0"))
+sensors.append(robot.getDistanceSensor("so1"))
+sensors.append(robot.getDistanceSensor("so2"))
+sensors.append(robot.getDistanceSensor("so3"))
+sensors.append(robot.getDistanceSensor("so4"))
+sensors.append(robot.getDistanceSensor("so5"))
+sensors.append(robot.getDistanceSensor("so6"))
+sensors.append(robot.getDistanceSensor("so7"))
+
+# Switch all the sensors on
+for sensor in sensors:
+    sensor.enable(timestep)
+
+
+def getClosestObjectToRobot():
+    """
+    Purpose: Return the direction and distance for the closest object to the robot
+    
+    Notes: Refer to the diagrams on the girls into coding webpage for the distance
+    convention. The distance is returned in meters. The value returned by the getValue() 
+    method of the distance sensors corresponds to a physical value (here we have a sonar, 
+    so it is the strength of the sonar ray). This function makes a conversion to a
+    distance value in meters.
+    """
+    
+    # Make local variables
+    maxSensorRange = 1.6 # in meters
+    currentSensorID = -1
+    lowestSensorDistance = maxSensorRange
+    lowestSensorID = None
+    
+    # Find the closest object to the robot and save the direction and distance (in m)
+    for sensor in sensors:
+        # calculate the distance in m (this formula is provided by the sensor manufacturer)
+        currentSensorDistance = ((1000 - sensor.getValue()) / 1000) * 5
+        currentSensorID = currentSensorID + 1
+        
+        if currentSensorDistance < lowestSensorDistance:
+            lowestSensorDistance = currentSensorDistance
+            lowestSensorID = currentSensorID
+    
+    # If no object is found, then return 'None' otherwise return the value       
+    if lowestSensorID != None:
+        currentDirection = lowestSensorID -3
+    else:
+        currentDirection = None
+        lowestSensorDistance = None
+        
+    return currentDirection, lowestSensorDistance
+    
+
+def stopRobotWheels():
+    """
+    Purpose: stop the robot
+    Notes: mySpeed -> can take values from 1-9
+    """
+    leftWheel.setVelocity(0.0)
+    rightWheel.setVelocity(0.0)
+        
+        
+def startMoveForward(mySpeed):
+    """
+    Purpose: move the robot forward
+    Notes: mySpeed -> can take values from 1-9
+    """
+    leftWheel.setVelocity(mySpeed)
+    rightWheel.setVelocity(mySpeed)
+    
+def startMoveBackward(mySpeed):
+    """
+    Purpose: move the robot backward
+    Notes: mySpeed -> can take values from 1-9
+    """
+    leftWheel.setVelocity(-mySpeed)
+    rightWheel.setVelocity(-mySpeed)
+    
+def startTurnLeft(mySpeed):
+    """
+    Purpose: turn the robot left
+    Notes: mySpeed -> can take values from 1-9
+    """
+    leftWheel.setVelocity(-mySpeed)
+    rightWheel.setVelocity(mySpeed)
+    
+def startTurnRight(mySpeed):
+    """
+    Purpose: turn the robot right
+    Notes: mySpeed -> can take values from 1-9
+    """
+    leftWheel.setVelocity(mySpeed)
+    rightWheel.setVelocity(-mySpeed)
+
+
+#### END of BMC CODE !! ------------------------------
+
+print("Here is an example of how we write a message to the console")
+print("--------------")
+print("Program starting !!")
+
+# Move forward 
+startMoveForward(5)
+# Keep going until we are 20cm away from the wall
+while True:
+    robot.step(500) # keep going for 0.5 seconds (value is in milli seconds (ms))
+    direction, distance = getClosestObjectToRobot()
+    print("distance = ", distance) # here is one example of printing in python
+    print("direction = ", direction)
+    if distance != None and distance < 0.2:
+        break
+    
+# Move backward 
+startMoveBackward(5)
+print("hello")
+# Keep going until we are 50cm away from the wall
+while True:
+    robot.step(500)
+    direction, distance = getClosestObjectToRobot()
+    print(direction = {}, distance = {}).format(direction, distance) # here is another example of printing in python
+    if distance != None and distance > 1:
+        break
+    
+stopRobotWheels()
