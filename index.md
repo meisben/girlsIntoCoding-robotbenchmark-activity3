@@ -11,6 +11,24 @@ title: Pick and place with a robot arm!
 
 A project activity for [Girls Into Coding](https://www.girlsintocoding.com/) using a online version of the free open source [Webots](https://www.cyberbotics.com/) robot simulator.
 
+<!--Comment: End of markdown section-->
+
+<!--Comment: This is html bootstrap-->
+
+<div id="sessionLinkPanel" class="container p-3 my-3 bg-warning">
+<h2>Actvity series</h2> 
+  <p>This activity session is part of a series on simulating robots, you can see links to all the activities in this series below!</p>
+<ul class="list-group">
+  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity/" target="_blank" class="list-group-item list-group-item-action"><b>Activity session 1:</b> Intro to robot simulation</a>
+  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity2/" target="_blank" class="list-group-item list-group-item-action"><b>Activity session 2:</b> Pick and place with a robot arm</a>
+  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity3/" target="_blank" class="list-group-item list-group-item-action"><b>Activity session 3:</b> Giving instructions to a robot using a state machine</a>
+</ul>
+</div>
+
+<!--Comment: This is the end of html bootstrap-->
+
+<!--Comment: This section is markdown-->
+
 This session is designed to be fun! The idea is that we can follow it together online, but that we can be free to move at our own pace. We're going to be doing some basic python programming in this activity. If you're not too familiar with Python, don't worry, you'll be able to follow along :) ! 
 
 <!--Comment: End of markdown section-->
@@ -41,14 +59,7 @@ This session is designed to be fun! The idea is that we can follow it together o
 </ul>
 </div>
 
-<div id="sessionLinkPanel" class="container p-3 my-3 bg-warning">
-<h2>Actvity series</h2> 
-  <p>This activity session is part of a series on simulating robots, you can see links to all the activities in this series below!</p>
-<ul class="list-group">
-  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity/" target="_blank" class="list-group-item list-group-item-action"><b>Activity session 1:</b> Intro to robot simulation</a>
-  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity2/" target="_blank" class="list-group-item list-group-item-action"><b>Activity session 2:</b> Pick and place with a robot arm</a>
-</ul>
-</div>
+
 
 <!--Comment: This is the end of html bootstrap-->
 
@@ -60,7 +71,7 @@ This session is designed to be fun! The idea is that we can follow it together o
 
 <!--Comment: This section is markdown again-->
 
-# Let's get familiar with our mobile robot arm!
+# Let's get familiar with our robot
 ---
 
 <!--Comment: End of markdown-->
