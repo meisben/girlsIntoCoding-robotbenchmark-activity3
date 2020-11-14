@@ -16,12 +16,12 @@ A project activity for [Girls Into Coding](https://www.girlsintocoding.com/) usi
 <!--Comment: This is html bootstrap-->
 
 <div id="sessionLinkPanel" class="container p-3 my-3 bg-warning">
-<h2>Actvity series</h2> 
+<h2>Activity series</h2> 
   <p>This activity session is part of a series on simulating robots, you can see links to all the activities in this series below!</p>
 <ul class="list-group">
-  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity/" target="_blank" class="list-group-item list-group-item-action"><b>Activity session 1:</b> Intro to robot simulation</a>
-  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity2/" target="_blank" class="list-group-item list-group-item-action"><b>Activity session 2:</b> Pick and place with a robot arm</a>
-  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity3/" target="_blank" class="list-group-item list-group-item-action"><b>Activity session 3:</b> Giving instructions to a robot using a state machine</a>
+  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity/" target="_blank" class="list-group-item list-group-item-action"><b>Session 1:</b> Intro to robot simulation</a>
+  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity2/" target="_blank" class="list-group-item list-group-item-action"><b>Session 2:</b> Pick and place with a robot arm</a>
+  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity3/" target="_blank" class="list-group-item list-group-item-action"><b>Session 3:</b> Giving instructions to a robot using a state machine</a>
 </ul>
 </div>
 
@@ -561,31 +561,31 @@ while True:
 <div class="container">
   <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Example Answer</button>
   <div id="demo3" class="collapse" markdown="1">
-    ```python
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-    # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-        
-        
-    print("hello there Nikita")
-        
-    # Move backward 
-    startMoveBackward(5)
-    # Keep going for 2 seconds
-    milliSeconds = 0
-    while True:
-        robot.step(500)
-        milliSeconds = milliSeconds + 500
-        direction, distance = getClosestObjectToRobot()
-        print("time = {}").format(milliSeconds) 
-        # If the time is longer than 2 seconds, then stop moving!
-        if milliSeconds > 2000:
-            break
-        
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-    # ~~~~ END OF YOUR CODE EDITS ~~~
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-    ```
+  ```python
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+      
+      
+  print("hello there Nikita")
+      
+  # Move backward 
+  startMoveBackward(5)
+  # Keep going for 2 seconds
+  milliSeconds = 0
+  while True:
+      robot.step(500)
+      milliSeconds = milliSeconds + 500
+      direction, distance = getClosestObjectToRobot()
+      print("time = {}").format(milliSeconds) 
+      # If the time is longer than 2 seconds, then stop moving!
+      if milliSeconds > 2000:
+          break
+      
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  # ~~~~ END OF YOUR CODE EDITS ~~~
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  ```
   </div>
 </div>
 
@@ -666,44 +666,44 @@ while True:
 <div class="container">
   <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Example Answer</button>
   <div id="demo3" class="collapse" markdown="1">
-    ```python
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-    # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-        
-            
-    print("hello there Nikita")
-        
-    # Move backward 
-    startMoveBackward(5)
-    # Keep going for 2 seconds
-    milliSeconds = 0
-    while True:
-        robot.step(500)
-        milliSeconds = milliSeconds + 500
-        direction, distance = getClosestObjectToRobot()
-        print("time = {}").format(milliSeconds) 
-        # If the time is longer than 2 seconds, then stop moving!
-        if milliSeconds > 2000:
-            break
+  ```python
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+      
+          
+  print("hello there Nikita")
+      
+  # Move backward 
+  startMoveBackward(5)
+  # Keep going for 2 seconds
+  milliSeconds = 0
+  while True:
+      robot.step(500)
+      milliSeconds = milliSeconds + 500
+      direction, distance = getClosestObjectToRobot()
+      print("time = {}").format(milliSeconds) 
+      # If the time is longer than 2 seconds, then stop moving!
+      if milliSeconds > 2000:
+          break
 
-    # Turn 
-    startTurnRight(5)
-    # Keep going for 2 seconds
-    milliSeconds = 0
-    while True:
-        robot.step(500)
-        milliSeconds = milliSeconds + 500
-        print("time = {}").format(milliSeconds) 
-        # If the time is too long, then stop moving!
-        if milliSeconds > 2000:
-            break
-        
-        
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-    # ~~~~ END OF YOUR CODE EDITS ~~~
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-    ```
+  # Turn 
+  startTurnRight(5)
+  # Keep going for 2 seconds
+  milliSeconds = 0
+  while True:
+      robot.step(500)
+      milliSeconds = milliSeconds + 500
+      print("time = {}").format(milliSeconds) 
+      # If the time is too long, then stop moving!
+      if milliSeconds > 2000:
+          break
+      
+      
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  # ~~~~ END OF YOUR CODE EDITS ~~~
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  ```
   </div>
 </div>
 
@@ -712,3 +712,20 @@ while True:
 <!--Comment: End of html bootstrap -->
 
 <!--Comment: Back to markdown -->
+
+# State machines
+---
+
+<!--Comment: End of markdown-->
+
+<!--Comment: Back to html bootstrap -->
+
+<div id="Activity6" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #6</h2>
+</div>
+
+<!--Comment: End of html bootstrap -->
+
+<!--Comment: Back to markdown -->
+
+* Better as a state machine!
