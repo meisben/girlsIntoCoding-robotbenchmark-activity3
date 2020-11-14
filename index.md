@@ -45,13 +45,13 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 <h2>Contents</h2>
 <ul class="list-group">
   <li class="list-group-item"><a href="#resourcesPanel">Resources</a></li>
-  <li class="list-group-item"><a href="#Activity1">Let’s get familiar with our robot</a></li>
-  <li class="list-group-item"><a href="#Activity2">Let’s make our robot move using python functions</a></li>
-  <li class="list-group-item"><a href="#Activity3">How the robot senses objects</a></li>
-  <li class="list-group-item"><a href="#Activity4">Changing the robot’s behaviour</a></li>
-  <li class="list-group-item"><a href="#Activity5">Making the robot respond to time instead of distance</a></li>
-  <li class="list-group-item"><a href="#Activity6">Making the robot change its movement type</a></li>
-  <li class="list-group-item"><a href="#Activity1">State machines</a></li>
+  <li class="list-group-item"><a href="#Activity1">Activity 1: Let’s get familiar with our robot</a></li>
+  <li class="list-group-item"><a href="#Activity2">Activity 2: Let’s make our robot move using python functions</a></li>
+  <li class="list-group-item"><a href="#Activity3">Activity 3: How the robot senses objects</a></li>
+  <li class="list-group-item"><a href="#Activity4">Activity 4: Changing the robot’s behaviour</a></li>
+  <li class="list-group-item"><a href="#Activity5">Activity 5: Making the robot respond to time instead of distance</a></li>
+  <li class="list-group-item"><a href="#Activity6">Activity 6: Making the robot change its movement type</a></li>
+  <li class="list-group-item"><a href="#Activity7">Activity 7: Creating a state machine</a></li>
 </ul>
 </div>
 
