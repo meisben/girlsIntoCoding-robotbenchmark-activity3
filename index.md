@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Pick and place with a robot arm!
+title: Robots & Behaviours
 ---
 
 <!--Comment: Above here is the header, we need this to generate the web page-->
@@ -159,6 +159,7 @@ First we're going to get familiar with how we control our view of the 3D simulat
 <div class="container">
   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1a">Answer</button>
   <div id="demo1a" class="collapse" markdown="1">
+  ```python
   """
   Purpose: Sample base code controller for the 'finite state machine' girls into coding activity
 
@@ -350,6 +351,7 @@ First we're going to get familiar with how we control our view of the 3D simulat
   # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
       
   stopRobotWheels()
+  ```
   </div>
 </div>
 
