@@ -148,7 +148,7 @@ First we're going to get familiar with how we control our view of the 3D simulat
 
 * A window will pop up with python code in it! This is how we program our virtual robot.
 * Delete all the code in the robot controller window, by hightlighting it all (or pressing **ctrl-A**) and then pressing **delete**
-* Copy and paste the **'Base Code'** code from below into the robot controller window, by hightlighting it all (or pressing **ctrl-A**) then right clicking and pressing **copy**
+* Copy and paste the **'Activity Base Code'** code from below into the robot controller window, by hightlighting it all then right clicking and pressing **copy** (or pressing **ctrl+C**)
   
 ![image3](images/image3.png)
 
@@ -157,7 +157,7 @@ First we're going to get familiar with how we control our view of the 3D simulat
 * Have a look at the python functions that are making the robot move in the 'Start of main program' section of the code. We'll discuss these together!
 
 <div class="container">
-  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1a">Answer</button>
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1a">Activity Base Code</button>
   <div id="demo1a" class="collapse" markdown="1">
   ```python
   """
@@ -386,6 +386,29 @@ First we're going to get familiar with how we control our view of the 3D simulat
 * What should the robot do when it detects a wall?
 
 
+<div class="container">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1b">Hint</button>
+  <div id="demo1b" class="collapse" markdown="1">
+  Try having a look at the function **getClosestObjectToRobot()** to see what it does!
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo1c">Answer</button>
+  <div id="demo1c" class="collapse" markdown="1">
+
+  The robot detects distance using it's ultrasonic sensors. The diagram below shows how they work!
+
+  ![image6](images/image6.png)
+
+  </div>
+</div>
+
+<br>
+
+
 # Let's change the robot's behaviour
 ---
 
@@ -404,7 +427,9 @@ First we're going to get familiar with how we control our view of the 3D simulat
 * What would we do if we wanted to change the behaviour of the robot when it reaches the wall? 
 * Let's alter the code together to make this happen! Our goal is to make the robot move backwards, but not as far.
 * Open the 'controller' (code editor) for the robot
-* ![image2](images/image2.png)
+
+![image2](images/image2.png)
+
 * Scroll to the section of the code which looks like this (it should be lines 168-189):
 
 ```python

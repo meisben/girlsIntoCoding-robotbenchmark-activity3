@@ -133,7 +133,7 @@ def getClosestObjectToRobot():
     
     # If no object is found, then return 'None' otherwise return the value       
     if lowestSensorID != None:
-        currentDirection = lowestSensorID -3
+        currentDirection = lowestSensorID -3.5
     else:
         currentDirection = None
         lowestSensorDistance = None
