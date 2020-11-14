@@ -185,7 +185,7 @@ First we're going to get familiar with how we control our view of the 3D simulat
 * What should the robot do when it detects a wall?
 
 
-# Let's change the robot's movement behaviour
+# Let's change the robot's behaviour
 ---
 
 <!--Comment: End of markdown-->
@@ -236,8 +236,12 @@ while True:
 * How would we make the robot move backwards less far?
 * Take a look at the hint and example answers if you're stuck!
 
+<!--Comment: End of markdown-->
+
+<!--Comment: Back to html bootstrap -->
+
 <div class="container">
-  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo2">Hint</button>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Hint</button>
   <div id="demo2" class="collapse" markdown="1">
   For printing to the console, try having a look at the code line: print("hello :)")
 
@@ -250,32 +254,148 @@ while True:
 <div class="container">
   <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Example Answer</button>
   <div id="demo3" class="collapse" markdown="1">
-  ```python
-  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-  # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
-  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-      
-      
-  print("hello there Nikita")
-      
-  # Move backward 
-  startMoveBackward(5)
-  # Keep going until we are 1m away from the wall
-  while True:
-      robot.step(500)
-      direction, distance = getClosestObjectToRobot()
-      print("direction = {}, distance = {}").format(direction, distance) 
-      # If the object is too far, then stop moving backward!
-      # We change this value to 0.5 so the robot travels on 0.5m backwards from the wall
-      if distance != None and distance > 0.75:
-          break
-      
-      
-  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-  # ~~~~ END OF YOUR CODE EDITS ~~~
-  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-  ```
+    ```python
+    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+    # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
+    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+        
+        
+    print("hello there Nikita")
+        
+    # Move backward 
+    startMoveBackward(5)
+    # Keep going until we are 1m away from the wall
+    while True:
+        robot.step(500)
+        direction, distance = getClosestObjectToRobot()
+        print("direction = {}, distance = {}").format(direction, distance) 
+        # If the object is too far, then stop moving backward!
+        # We change this value to 0.5 so the robot travels on 0.5m backwards from the wall
+        if distance != None and distance > 0.75:
+            break
+        
+        
+    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+    # ~~~~ END OF YOUR CODE EDITS ~~~
+    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+    ```
   </div>
 </div>
 
 <br>
+
+<!--Comment: End of html bootstrap -->
+
+<!--Comment: Back to markdown -->
+
+# Let's make change the robot movement
+---
+
+<!--Comment: End of markdown-->
+
+<!--Comment: Back to html bootstrap -->
+
+<div id="Activity5" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #5</h2>
+</div>
+
+<!--Comment: End of html bootstrap -->
+
+<!--Comment: Back to markdown -->
+
+* What would we do if we wanted to change the movement of the robot? 
+* Let's alter the code together to make this happen! Our goal is to make the robot turn after it has moved backwards
+* Open the 'controller' (code editor) for the robot
+* ![image2](images/image2.png)
+* Scroll to the section of the code which looks like this (it should be lines 168-189):
+
+```python
+# ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+# ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
+# ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+    
+    
+print("hello :)")
+    
+# Move backward 
+startMoveBackward(5)
+# Keep going until we are 1m away from the wall
+while True:
+    robot.step(500)
+    direction, distance = getClosestObjectToRobot()
+    print("direction = {}, distance = {}").format(direction, distance) 
+    # If the object is too far, then stop moving backward!
+    if distance != None and distance > 1:
+        break
+    
+    
+# ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+# ~~~~ END OF YOUR CODE EDITS ~~~
+# ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+```
+
+* Let's discuss this code together.
+* How would we change the code so that robot turns when it has finished going backwards?
+* Have a look at the hint to make a start!
+
+<!--Comment: End of markdown-->
+
+<!--Comment: Back to html bootstrap -->
+
+<div class="container">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Hint</button>
+  <div id="demo2" class="collapse" markdown="1">
+  Try having a look at the function called 'startTurnRight(mySpeed)'. How would you add this to the code to make the robot turn right.
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Example Answer</button>
+  <div id="demo3" class="collapse" markdown="1">
+    ```python
+    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+    # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
+    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+        
+        
+    print("hello there Nikita")
+        
+    # Move backward 
+    startMoveBackward(5)
+    # Keep going until we are 1m away from the wall
+    while True:
+        robot.step(500)
+        direction, distance = getClosestObjectToRobot()
+        print("direction = {}, distance = {}").format(direction, distance) 
+        # If the object is too far, then stop moving backward!
+        # We change this value to 0.5 so the robot travels on 0.5m backwards from the wall
+        if distance != None and distance > 0.75:
+            break
+
+    # Turn 
+    startTurnRight(5)
+    # Keep going until we are 1m away from the wall
+    milliSeconds = 0
+    while True:
+        robot.step(500)
+        milliSeconds = milliSeconds + 500
+        print("time = {}").format(milliSeconds) 
+        # If the time is too long, then stop moving!
+        if milliSeconds > 2000:
+            break
+        
+        
+    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+    # ~~~~ END OF YOUR CODE EDITS ~~~
+    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+    ```
+  </div>
+</div>
+
+<br>
+
+<!--Comment: End of html bootstrap -->
+
+<!--Comment: Back to markdown -->
