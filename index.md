@@ -45,7 +45,13 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 <h2>Contents</h2>
 <ul class="list-group">
   <li class="list-group-item"><a href="#resourcesPanel">Resources</a></li>
-  <li class="list-group-item"><a href="#Activity1">Pick and place example code</a></li>
+  <li class="list-group-item"><a href="#Activity1">Let’s get familiar with our robot</a></li>
+  <li class="list-group-item"><a href="#Activity2">Let’s make our robot move using python functions</a></li>
+  <li class="list-group-item"><a href="#Activity3">How the robot senses objects</a></li>
+  <li class="list-group-item"><a href="#Activity4">Changing the robot’s behaviour</a></li>
+  <li class="list-group-item"><a href="#Activity5">Making the robot respond to time instead of distance</a></li>
+  <li class="list-group-item"><a href="#Activity6">Making the robot change its movement type</a></li>
+  <li class="list-group-item"><a href="#Activity1">State machines</a></li>
 </ul>
 </div>
 
@@ -624,15 +630,15 @@ while True:
 
 <!--Comment: Back to markdown -->
 
-# Let's make change the robot movement
+# Making the robot change its movement type
 ---
 
 <!--Comment: End of markdown-->
 
 <!--Comment: Back to html bootstrap -->
 
-<div id="Activity5" class="container p-3 my-3 bg-primary text-primary">
-<h2>Activity #5</h2>
+<div id="Activity6" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #6</h2>
 </div>
 
 <!--Comment: End of html bootstrap -->
@@ -745,8 +751,8 @@ while True:
 
 <!--Comment: Back to html bootstrap -->
 
-<div id="Activity6" class="container p-3 my-3 bg-primary text-primary">
-<h2>Activity #6</h2>
+<div id="Activity7" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #7</h2>
 </div>
 
 <!--Comment: End of html bootstrap -->
