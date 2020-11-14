@@ -119,7 +119,7 @@ First we're going to get familiar with how we control our view of the 3D simulat
   </div>
 </div>
 
-
+<br>
 
 <!--Comment: End of html bootstrap -->
 
@@ -143,11 +143,15 @@ First we're going to get familiar with how we control our view of the 3D simulat
 * We're still going to be using the **Wall Following** activity at the [robotbenchmark](https://robotbenchmark.net/) website. So you can keep this open all the time!
 * We're going to get our robot moving!!
 * When you're ready to program the robot, right click on it, and select **Edit controller**
+
 ![image2](images/image2.png)
+
 * A window will pop up with python code in it! This is how we program our virtual robot.
 * Delete all the code in the robot controller window, by hightlighting it all (or pressing **ctrl-A**) and then pressing **delete**
 * Copy and paste the code from below into the robot controller window, by hightlighting it all (or pressing **ctrl-A**) then right clicking and pressing **copy**
+  
 ![image3](images/image3.png)
+
 * Start the simulation by following the instrucitons in the image above
 * You should see the robot approach the wall, but then reverse quickly when it senses it!
 * Have a look at the python functions that are making the robot move in the 'Start of main program' section of the code. We'll discuss these together!
@@ -197,7 +201,7 @@ First we're going to get familiar with how we control our view of the 3D simulat
 <!--Comment: Back to markdown -->
 
 * What would we do if we wanted to change the behaviour of the robot when it reaches the wall? 
-* Let's alter the code together to make this happen!
+* Let's alter the code together to make this happen! Our goal is to make the robot move backwards, but not as far.
 * Open the 'controller' (code editor) for the robot
 * ![image2](images/image2.png)
 * Scroll to the section of the code which looks like this (it should be lines 168-189):
@@ -226,3 +230,52 @@ while True:
 # ~~~~ END OF YOUR CODE EDITS ~~~
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 ```
+
+* Let's discuss this code together.
+* How would we change the code so that when the robot changes direction (from fowards to backwards) then it prints our name e.g. "hello there ..."?
+* How would we make the robot move backwards less far?
+* Take a look at the hint and example answers if you're stuck!
+
+<div class="container">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo2">Hint</button>
+  <div id="demo2" class="collapse" markdown="1">
+  For printing to the console, try having a look at the code line: print("hello :)")
+
+  For the movement, try having a look at the "if statement"!
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Example Answer</button>
+  <div id="demo3" class="collapse" markdown="1">
+  ```python
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+      
+      
+  print("hello there Nikita")
+      
+  # Move backward 
+  startMoveBackward(5)
+  # Keep going until we are 1m away from the wall
+  while True:
+      robot.step(500)
+      direction, distance = getClosestObjectToRobot()
+      print("direction = {}, distance = {}").format(direction, distance) 
+      # If the object is too far, then stop moving backward!
+      # We change this value to 0.5 so the robot travels on 0.5m backwards from the wall
+      if distance != None and distance > 0.75:
+          break
+      
+      
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  # ~~~~ END OF YOUR CODE EDITS ~~~
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  ```
+  </div>
+</div>
+
+<br>
