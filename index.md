@@ -166,7 +166,7 @@ First we're going to get familiar with how we control our view of the 3D simulat
   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1a">Activity Base Code</button>
   <div id="demo1a" class="collapse" markdown="1">
 
-  ```python
+```python
 """
 Purpose: Sample base code controller for the 'finite state machine' girls into coding activity
 
@@ -358,7 +358,7 @@ while True:
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
     
 stopRobotWheels()
-  ```
+```
 
   </div>
 </div>
