@@ -1147,7 +1147,7 @@ def robotSpin():
 * What we want to achieve is shown in the image below
 * Notice the change in arrow directions !!
 
-![image9](images/image9.png)
+![image9](images/image9.png)(https://github.com/meisben/girlsIntoCoding-robotbenchmark-activity3/blob/main/images/image9.png)
 
 
 <div class="container">
