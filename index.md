@@ -21,7 +21,7 @@ A project activity for [Girls Into Coding](https://www.girlsintocoding.com/) usi
 <ul class="list-group">
   <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity/" target="_blank" class="list-group-item list-group-item-action"><b>Session 1:</b> Intro to robot simulation</a>
   <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity2/" target="_blank" class="list-group-item list-group-item-action"><b>Session 2:</b> Pick and place with a robot arm</a>
-  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity3/" target="_blank" class="list-group-item list-group-item-action"><b>Session 3:</b> Giving instructions to a robot using a state machine</a>
+  <a href="https://meisben.github.io/girlsIntoCoding-robotbenchmark-activity3/" target="_blank" class="list-group-item list-group-item-action"><b>Session 3:</b> Robots & Behaviours</a>
 </ul>
 </div>
 
