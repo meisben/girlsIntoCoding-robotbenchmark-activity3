@@ -496,7 +496,7 @@ while True:
   <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Example Answer</button>
   <div id="demo3" class="collapse" markdown="1">
 
-    ```python
+```python
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
@@ -520,7 +520,7 @@ while True:
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 # ~~~~ END OF YOUR CODE EDITS ~~~
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-    ```
+```
 
   </div>
 </div>
@@ -604,7 +604,7 @@ while True:
   <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Example Answer</button>
   <div id="demo3" class="collapse" markdown="1">
 
-  ```python
+```python
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
@@ -628,7 +628,7 @@ while True:
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 # ~~~~ END OF YOUR CODE EDITS ~~~
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-  ```
+```
 
   </div>
 </div>
@@ -711,7 +711,7 @@ while True:
   <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Example Answer</button>
   <div id="demo3" class="collapse" markdown="1">
   
-  ```python
+```python
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
@@ -748,7 +748,7 @@ while True:
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 # ~~~~ END OF YOUR CODE EDITS ~~~
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-  ```
+```
 
   </div>
 </div>
@@ -803,7 +803,7 @@ while True:
   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1a">State Machine Code</button>
   <div id="demo1a" class="collapse" markdown="1">
 
-  ```python
+```python
 """
 Purpose: Sample base code controller for the 'finite state machine' girls into coding activity
 
@@ -1067,7 +1067,7 @@ ourStateMachine(robotState)
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
   
 stopRobotWheels()
-  ```
+```
 
   </div>
 </div>
