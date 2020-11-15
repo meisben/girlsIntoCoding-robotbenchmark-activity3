@@ -384,6 +384,12 @@ First we're going to get familiar with how we control our view of the 3D simulat
 ![image4](images/image4.png)
 * The console is where the robot prints messages to us!
 * Let's discuss what it is saying
+* Every 0.5 seconds we are asking the robot to tell us the distance of any objects from it's ultrasonic sensors
+* It is telling us the distance by printing this to the console
+* The diagram below shows how they work!
+
+![image6](images/image6.png)
+
 
 **Questions**
 *Let's answer these questions as a group*
@@ -405,10 +411,10 @@ First we're going to get familiar with how we control our view of the 3D simulat
   <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo1c">Answer</button>
   <div id="demo1c" class="collapse" markdown="1">
 
-  The robot detects distance using it's ultrasonic sensors. The diagram below shows how they work!
-
-  ![image6](images/image6.png)
-
+  * The robot detects the wall when it is 1.5 meters away
+  * The robot detects the wall using the ultrasonic sensors
+  * When the robot detects the wall we need it to change behaviour (e.g. stop, or turn, or move backwards!)
+  
   </div>
 </div>
 
@@ -1053,7 +1059,7 @@ while True:
       
   stopRobotWheels()
   ```
-    
+
   </div>
 </div>
 
