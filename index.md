@@ -1143,5 +1143,6 @@ def robotSpin():
 * Now lets look at the state machine
 * How can we change the transition conditions to change the order of behaviours? 
 * What we want to achieve is shown in the image below
+* Notice the change in arrow directions !!
 
-
+![image9](images/image9.png)
