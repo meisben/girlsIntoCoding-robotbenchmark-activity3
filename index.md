@@ -497,29 +497,29 @@ while True:
   <div id="demo3" class="collapse" markdown="1">
 
   ```python
-  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-  # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
-  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-      
-      
-  print("hello there Nikita")
-      
-  # Move backward 
-  startMoveBackward(5)
-  # Keep going until we are 1m away from the wall
-  while True:
-      robot.step(500)
-      direction, distance = getClosestObjectToRobot()
-      print("direction = {}, distance = {}").format(direction, distance) 
-      # If the object is too far, then stop moving backward!
-      # We change this value to 0.5 so the robot travels on 0.5m backwards from the wall
-      if distance != None and distance > 0.75:
-          break
-      
-      
-  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-  # ~~~~ END OF YOUR CODE EDITS ~~~
-  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+# ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+# ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
+# ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+    
+    
+print("hello there Nikita")
+    
+# Move backward 
+startMoveBackward(5)
+# Keep going until we are 1m away from the wall
+while True:
+    robot.step(500)
+    direction, distance = getClosestObjectToRobot()
+    print("direction = {}, distance = {}").format(direction, distance) 
+    # If the object is too far, then stop moving backward!
+    # We change this value to 0.5 so the robot travels on 0.5m backwards from the wall
+    if distance != None and distance > 0.75:
+        break
+    
+    
+# ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+# ~~~~ END OF YOUR CODE EDITS ~~~
+# ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
   ```
 
   </div>
