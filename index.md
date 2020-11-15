@@ -1097,4 +1097,51 @@ stopRobotWheels()
 <!--Comment: Back to markdown -->
 
 * The state machine allows us to very easily change the behaviour of the robot!
-* 
+* Let's change the behaviour to make a state machine that does the following
+* (1) Go towards wall (2) Make a 360 degree spin (3) Go backwards away from wall (4) Repeat
+* How would we change the code to do this? 
+* First let's make the spin happen!
+* Have a look at the robotSpin() function, you can see this below
+* How can you change the time value to make the robot spin 360 degree (one complete turn?)
+
+```python
+
+def robotSpin():
+  """
+  Purpose: make the robot spin around 1 time :)
+  Notes: you need to edit this function to make it work
+  """
+  # we want the robot to do a spin but it should end up facing the wall !
+  
+  global robotState
+  # Start spining with speed = 5
+  startTurnRight(5)
+  # Keep going for 2 seconds
+  timePassed = 0
+  while True:
+      robot.step(500) # 500 milli seconds
+      timePassed = timePassed + 500
+      direction, distance = getClosestObjectToRobot()
+      print("direction = {}, distance = {}").format(direction, distance)
+      print("time passed = {}").format(timePassed)
+      
+      # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+      # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
+      # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+      
+      # If the the time is too big, then stop spinning!
+      if timePassed > 2000: # 2 seconds!
+          break
+
+      # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+      # ~~~~ END OF YOUR CODE EDITS ~~~
+      # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+      
+  robotState = 0
+
+```
+* Now lets look at the state machine
+* How can we change the transition conditions to change the order of behaviours? 
+* What we want to achieve is shown in the image below
+
+
