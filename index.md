@@ -796,8 +796,8 @@ while True:
 ![image3](images/image3.png)
 
 * Start the simulation by following the instrucitons in the image above
-* You should see the robot approach the wall, but then reverse quickly when it senses it!
-* Have a look at the python functions that are making the robot move in the 'Start of main program' section of the code. We'll discuss these together!
+* You should see the robot have the behaviours we programmed in the state machine
+* Have a look at the python functions that are making the robot move in the **'Our States'** and **'Our State Machine'** section of the code
 
 <div class="container">
   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1a">State Machine Code</button>
@@ -805,7 +805,7 @@ while True:
 
 ```python
 """
-Purpose: Sample base code controller for the 'finite state machine' girls into coding activity
+Purpose: State machine controller for the 'finite state machine' girls into coding activity
 
 Notes: Hi! we're going to be editing this program together to make the robot move. It's important 
 that this is a fun activity! If anything is unclear please ask! We're really happy to help. A lot
@@ -956,7 +956,7 @@ def goForwardsToWall():
   Purpose: make the robot reach the wall and then change state
   Notes: robot stops 20cm from the wall
   """
-  
+  global robotState
   # Move forward 
   startMoveForward(5)
   # Keep going until we are 20cm away from the wall
@@ -976,7 +976,7 @@ def goBackwardsFromWall():
   Purpose: make the robot move away from the wall and then change state
   Notes: robot stops 1m from the wall
   """
-  
+  global robotState
   # Move backward 
   startMoveBackward(5)
   # Keep going until we are 1m away from the wall
@@ -995,9 +995,9 @@ def robotSpin():
   Purpose: make the robot spin around 1 time :)
   Notes: you need to edit this function to make it work
   """
-  
   # we want the robot to do a spin but it should end up facing the wall !
   
+  global robotState
   # Start spining with speed = 5
   startTurnRight(5)
   # Keep going for 2 seconds
@@ -1025,20 +1025,21 @@ def robotSpin():
 
 #---------------------
 # Our State Machine
-#---------------------   
+#--------------------- 
+
+# The robot state is passed to the switcher object
+switcher = {
+  0: goForwardsToWall,
+  1: goBackwardsFromWall,
+  2: robotSpin
+  }
 
 # Create our state machine
 def ourStateMachine(robotState):
-      
-  # The robot state is passed to the switcher object
-  switcher = {
-      0: goForwardsToWall(),
-      1: goBackwardsFromWall(),
-      2: robotSpin()
-      }
-  
+
   # Defines error message if incorrect state is requested
-  return switcher.get(robotState, "Invalid State") 
+  func = switcher.get(robotState, "Invalid State") 
+  func()
 
 
 #---------------------
@@ -1060,7 +1061,8 @@ NumberMovementsCount = 0
 
   
 while True:
-ourStateMachine(robotState)
+    ourStateMachine(robotState)
+    print("robotState = {}").format(robotState)
   
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 # ~~~~ END OF YOUR CODE EDITS ~~~
@@ -1073,3 +1075,26 @@ stopRobotWheels()
 </div>
 
 <br>
+
+
+<!--Comment: End of html bootstrap -->
+
+<!--Comment: Back to markdown -->
+
+# Changing the state machine behaviours
+---
+
+<!--Comment: End of markdown-->
+
+<!--Comment: Back to html bootstrap -->
+
+<div id="Activity8" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #8</h2>
+</div>
+
+<!--Comment: End of html bootstrap -->
+
+<!--Comment: Back to markdown -->
+
+* The state machine allows us to very easily change the behaviour of the robot!
+* 
