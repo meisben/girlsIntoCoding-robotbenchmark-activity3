@@ -391,7 +391,7 @@ stopRobotWheels()
 * It is telling us the distance by printing this to the console
 * The diagram below shows how they work!
 
-![image6](images/image6.png)
+[![image6](images/image6.png)](images/image6.png)
 
 
 **Questions**
@@ -780,14 +780,14 @@ while True:
 * A really powerful idea for robot behaviours are state machines
 * It might sound scary but it's really not!! Let's take a look at what a state machine is together ! 
   
-![image7](images/image7.png)
+[![image7](images/image7.png)](images/image7.png)
 
 * As we can see in the images, we just have some robot behaviours, and we call them states!
 * We've already created these robot behaviours, so there's not much more to do
 * Let's have a look at one kind of program structure for a state machine in python
 * Here is some pseudo code which shows how it works
 
-![image8](images/image8.png)
+[![image8](images/image8.png)](images/image8.png)
 
 * So let's implement this for the robot simulation together!
 * Delete all the code in the robot controller window, by hightlighting it all (or pressing **ctrl-A**) and then pressing **delete**
