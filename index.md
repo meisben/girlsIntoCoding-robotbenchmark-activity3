@@ -787,271 +787,273 @@ while True:
 <div class="container">
   <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1a">Activity Base Code</button>
   <div id="demo1a" class="collapse" markdown="1">
-    ```python
-    """
-    Purpose: Sample base code controller for the 'finite state machine' girls into coding activity
 
-    Notes: Hi! we're going to be editing this program together to make the robot move. It's important 
-    that this is a fun activity! If anything is unclear please ask! We're really happy to help. A lot
-    of the code is already written to make this activity possible. The parts of the code that you 
-    should edit are the parts betweeen the squigly lines! like this...
+  ```python
+  """
+  Purpose: Sample base code controller for the 'finite state machine' girls into coding activity
 
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-    # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  Notes: Hi! we're going to be editing this program together to make the robot move. It's important 
+  that this is a fun activity! If anything is unclear please ask! We're really happy to help. A lot
+  of the code is already written to make this activity possible. The parts of the code that you 
+  should edit are the parts betweeen the squigly lines! like this...
 
-    # some edits that we make together
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-    # ~~~~ END OF YOUR CODE EDITS ~~~
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-    """
+  # some edits that we make together
 
-    #---------------------
-    # Python library imports
-    #---------------------
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  # ~~~~ END OF YOUR CODE EDITS ~~~
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  """
 
-    from controller import Robot # imports the language of the robot ! 
+  #---------------------
+  # Python library imports
+  #---------------------
 
-    #---------------------
-    # Starting up the robot
-    #---------------------
+  from controller import Robot # imports the language of the robot ! 
 
-    # Get pointer to the robot. So that we can talk to it!
-    robot = Robot()
+  #---------------------
+  # Starting up the robot
+  #---------------------
 
-    # Get pointer to the robot wheels motors.
-    leftWheel = robot.getMotor('left wheel')
-    rightWheel = robot.getMotor('right wheel')
+  # Get pointer to the robot. So that we can talk to it!
+  robot = Robot()
 
-    # We will use the velocity parameter of the wheels, so we need to
-    # set the target position to infinity. This means they will keep turning
-    # for ever unless we set their velocity to zero
-    leftWheel.setPosition(float('inf'))
-    rightWheel.setPosition(float('inf'))
+  # Get pointer to the robot wheels motors.
+  leftWheel = robot.getMotor('left wheel')
+  rightWheel = robot.getMotor('right wheel')
 
-    # Put all the ultrasonic sensors in an array
-    sensors = []
-    sensors.append(robot.getDistanceSensor("so0"))
-    sensors.append(robot.getDistanceSensor("so1"))
-    sensors.append(robot.getDistanceSensor("so2"))
-    sensors.append(robot.getDistanceSensor("so3"))
-    sensors.append(robot.getDistanceSensor("so4"))
-    sensors.append(robot.getDistanceSensor("so5"))
-    sensors.append(robot.getDistanceSensor("so6"))
-    sensors.append(robot.getDistanceSensor("so7"))
+  # We will use the velocity parameter of the wheels, so we need to
+  # set the target position to infinity. This means they will keep turning
+  # for ever unless we set their velocity to zero
+  leftWheel.setPosition(float('inf'))
+  rightWheel.setPosition(float('inf'))
 
-    # Get the time step of the current world (the smallest time unit)
-    timestep = int(robot.getBasicTimeStep())
+  # Put all the ultrasonic sensors in an array
+  sensors = []
+  sensors.append(robot.getDistanceSensor("so0"))
+  sensors.append(robot.getDistanceSensor("so1"))
+  sensors.append(robot.getDistanceSensor("so2"))
+  sensors.append(robot.getDistanceSensor("so3"))
+  sensors.append(robot.getDistanceSensor("so4"))
+  sensors.append(robot.getDistanceSensor("so5"))
+  sensors.append(robot.getDistanceSensor("so6"))
+  sensors.append(robot.getDistanceSensor("so7"))
 
-    # Switch all the sensors on
-    for sensor in sensors:
-        sensor.enable(timestep)
+  # Get the time step of the current world (the smallest time unit)
+  timestep = int(robot.getBasicTimeStep())
 
-
-    #---------------------
-    # Helpful functions for controling the robot (for the girls into coding activity)
-    #---------------------
-
-    def stopRobotWheels():
-        """
-        Purpose: stop the robot
-        Notes: mySpeed -> can take values from 1-9
-        """
-        leftWheel.setVelocity(0.0)
-        rightWheel.setVelocity(0.0)
-            
-            
-    def startMoveForward(mySpeed):
-        """
-        Purpose: move the robot forward
-        Notes: mySpeed -> can take values from 1-9
-        """
-        leftWheel.setVelocity(mySpeed)
-        rightWheel.setVelocity(mySpeed)
-        
-    def startMoveBackward(mySpeed):
-        """
-        Purpose: move the robot backward
-        Notes: mySpeed -> can take values from 1-9
-        """
-        leftWheel.setVelocity(-mySpeed)
-        rightWheel.setVelocity(-mySpeed)
-        
-    def startTurnLeft(mySpeed):
-        """
-        Purpose: turn the robot left
-        Notes: mySpeed -> can take values from 1-9
-        """
-        leftWheel.setVelocity(-mySpeed)
-        rightWheel.setVelocity(mySpeed)
-        
-    def startTurnRight(mySpeed):
-        """
-        Purpose: turn the robot right
-        Notes: mySpeed -> can take values from 1-9
-        """
-        leftWheel.setVelocity(mySpeed)
-        rightWheel.setVelocity(-mySpeed)
-        
-    def getClosestObjectToRobot():
-        """
-        Purpose: Return the direction and distance for the closest object to the robot
-        
-        Notes: Refer to the diagrams on the girls into coding webpage for the distance
-        convention. The distance is returned in meters. The value returned by the getValue() 
-        method of the distance sensors corresponds to a physical value (here we have a sonar, 
-        so it is the strength of the sonar ray). This function makes a conversion to a
-        distance value in meters.
-        """
-        
-        # Make local variables
-        maxSensorRange = 1.6 # in meters
-        currentSensorID = -1
-        lowestSensorDistance = maxSensorRange
-        lowestSensorID = None
-        
-        # Find the closest object to the robot and save the direction and distance (in m)
-        for sensor in sensors:
-            # calculate the distance in m (this formula is provided by the sensor manufacturer)
-            currentSensorDistance = ((1000 - sensor.getValue()) / 1000) * 5
-            currentSensorID = currentSensorID + 1
-            
-            if currentSensorDistance < lowestSensorDistance:
-                lowestSensorDistance = currentSensorDistance
-                lowestSensorID = currentSensorID
-        
-        # If no object is found, then return 'None' otherwise return the value       
-        if lowestSensorID != None:
-            currentDirection = lowestSensorID -3.5
-        else:
-            currentDirection = None
-            lowestSensorDistance = None
-            
-        return currentDirection, lowestSensorDistance
+  # Switch all the sensors on
+  for sensor in sensors:
+      sensor.enable(timestep)
 
 
-    #---------------------
-    # Our States
-    #---------------------   
-        
-    def goForwardsToWall():
-        """
-        Purpose: make the robot reach the wall and then change state
-        Notes: robot stops 20cm from the wall
-        """
-        
-        # Move forward 
-        startMoveForward(5)
-        # Keep going until we are 20cm away from the wall
-        while True:
-            robot.step(500) # keep going for 0.5 seconds (value is in milli seconds (ms))
-            direction, distance = getClosestObjectToRobot() # Get the info on the closest object
-            print("direction = {}, distance = {}").format(direction, distance)  # Print the info on the closest object
-            # If there is an object too close, then stop moving forward!
-            if distance != None and distance < 0.2:
-                break
-        robotState = 1
-        
-        
+  #---------------------
+  # Helpful functions for controling the robot (for the girls into coding activity)
+  #---------------------
 
-    def goBackwardsFromWall():
-        """
-        Purpose: make the robot move away from the wall and then change state
-        Notes: robot stops 1m from the wall
-        """
-        
-        # Move backward 
-        startMoveBackward(5)
-        # Keep going until we are 1m away from the wall
-        while True:
-            robot.step(500)
-            direction, distance = getClosestObjectToRobot()
-            print("direction = {}, distance = {}").format(direction, distance) 
-            # If the object is too far, then stop moving backward!
-            if distance != None and distance > 1:
-                break
-        robotState = 2
-        
-        
-    def robotSpin():
-        """
-        Purpose: make the robot spin around 1 time :)
-        Notes: you need to edit this function to make it work
-        """
-        
-        # we want the robot to do a spin but it should end up facing the wall !
-        
-        # Start spining with speed = 5
-        startTurnRight(5)
-        # Keep going for 2 seconds
-        timePassed = 0
-        while True:
-            robot.step(500) # 500 milli seconds
-            timePassed = timePassed + 500
-            direction, distance = getClosestObjectToRobot()
-            print("direction = {}, distance = {}").format(direction, distance)
-            print("time passed = {}").format(timePassed)
-            
-            # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-            # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
-            # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-            
-            # If the the time is too big, then stop spinning!
-            if timePassed > 2000: # 2 seconds!
-                break
-
-            # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-            # ~~~~ END OF YOUR CODE EDITS ~~~
-            # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-            
-        robotState = 0
-
-    #---------------------
-    # Our State Machine
-    #---------------------   
-
-    # Create our state machine
-    def ourStateMachine(robotState):
-            
-        # The robot state is passed to the switcher object
-        switcher = {
-            0: goForwardsToWall(),
-            1: goBackwardsFromWall(),
-            2: robotSpin()
-            }
-        
-        # Defines error message if incorrect state is requested
-        return switcher.get(robotState, "Invalid State") 
+  def stopRobotWheels():
+      """
+      Purpose: stop the robot
+      Notes: mySpeed -> can take values from 1-9
+      """
+      leftWheel.setVelocity(0.0)
+      rightWheel.setVelocity(0.0)
+          
+          
+  def startMoveForward(mySpeed):
+      """
+      Purpose: move the robot forward
+      Notes: mySpeed -> can take values from 1-9
+      """
+      leftWheel.setVelocity(mySpeed)
+      rightWheel.setVelocity(mySpeed)
+      
+  def startMoveBackward(mySpeed):
+      """
+      Purpose: move the robot backward
+      Notes: mySpeed -> can take values from 1-9
+      """
+      leftWheel.setVelocity(-mySpeed)
+      rightWheel.setVelocity(-mySpeed)
+      
+  def startTurnLeft(mySpeed):
+      """
+      Purpose: turn the robot left
+      Notes: mySpeed -> can take values from 1-9
+      """
+      leftWheel.setVelocity(-mySpeed)
+      rightWheel.setVelocity(mySpeed)
+      
+  def startTurnRight(mySpeed):
+      """
+      Purpose: turn the robot right
+      Notes: mySpeed -> can take values from 1-9
+      """
+      leftWheel.setVelocity(mySpeed)
+      rightWheel.setVelocity(-mySpeed)
+      
+  def getClosestObjectToRobot():
+      """
+      Purpose: Return the direction and distance for the closest object to the robot
+      
+      Notes: Refer to the diagrams on the girls into coding webpage for the distance
+      convention. The distance is returned in meters. The value returned by the getValue() 
+      method of the distance sensors corresponds to a physical value (here we have a sonar, 
+      so it is the strength of the sonar ray). This function makes a conversion to a
+      distance value in meters.
+      """
+      
+      # Make local variables
+      maxSensorRange = 1.6 # in meters
+      currentSensorID = -1
+      lowestSensorDistance = maxSensorRange
+      lowestSensorID = None
+      
+      # Find the closest object to the robot and save the direction and distance (in m)
+      for sensor in sensors:
+          # calculate the distance in m (this formula is provided by the sensor manufacturer)
+          currentSensorDistance = ((1000 - sensor.getValue()) / 1000) * 5
+          currentSensorID = currentSensorID + 1
+          
+          if currentSensorDistance < lowestSensorDistance:
+              lowestSensorDistance = currentSensorDistance
+              lowestSensorID = currentSensorID
+      
+      # If no object is found, then return 'None' otherwise return the value       
+      if lowestSensorID != None:
+          currentDirection = lowestSensorID -3.5
+      else:
+          currentDirection = None
+          lowestSensorDistance = None
+          
+      return currentDirection, lowestSensorDistance
 
 
-    #---------------------
-    # Start of main program
-    #---------------------
+  #---------------------
+  # Our States
+  #---------------------   
+      
+  def goForwardsToWall():
+      """
+      Purpose: make the robot reach the wall and then change state
+      Notes: robot stops 20cm from the wall
+      """
+      
+      # Move forward 
+      startMoveForward(5)
+      # Keep going until we are 20cm away from the wall
+      while True:
+          robot.step(500) # keep going for 0.5 seconds (value is in milli seconds (ms))
+          direction, distance = getClosestObjectToRobot() # Get the info on the closest object
+          print("direction = {}, distance = {}").format(direction, distance)  # Print the info on the closest object
+          # If there is an object too close, then stop moving forward!
+          if distance != None and distance < 0.2:
+              break
+      robotState = 1
+      
+      
 
-    # Our starting message for the program
-    print("--------------")
-    print("Here is an example of how we write a message to the console")
-    print("Program starting !!")
-    print("--------------")
+  def goBackwardsFromWall():
+      """
+      Purpose: make the robot move away from the wall and then change state
+      Notes: robot stops 1m from the wall
+      """
+      
+      # Move backward 
+      startMoveBackward(5)
+      # Keep going until we are 1m away from the wall
+      while True:
+          robot.step(500)
+          direction, distance = getClosestObjectToRobot()
+          print("direction = {}, distance = {}").format(direction, distance) 
+          # If the object is too far, then stop moving backward!
+          if distance != None and distance > 1:
+              break
+      robotState = 2
+      
+      
+  def robotSpin():
+      """
+      Purpose: make the robot spin around 1 time :)
+      Notes: you need to edit this function to make it work
+      """
+      
+      # we want the robot to do a spin but it should end up facing the wall !
+      
+      # Start spining with speed = 5
+      startTurnRight(5)
+      # Keep going for 2 seconds
+      timePassed = 0
+      while True:
+          robot.step(500) # 500 milli seconds
+          timePassed = timePassed + 500
+          direction, distance = getClosestObjectToRobot()
+          print("direction = {}, distance = {}").format(direction, distance)
+          print("time passed = {}").format(timePassed)
+          
+          # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+          # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
+          # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+          
+          # If the the time is too big, then stop spinning!
+          if timePassed > 2000: # 2 seconds!
+              break
 
-    robotState = 0
-    NumberMovementsCount = 0
+          # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+          # ~~~~ END OF YOUR CODE EDITS ~~~
+          # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+          
+      robotState = 0
 
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-    # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  #---------------------
+  # Our State Machine
+  #---------------------   
 
-        
-    while True:
-      ourStateMachine(robotState)
-        
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-    # ~~~~ END OF YOUR CODE EDITS ~~~
-    # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
-        
-    stopRobotWheels()
-    ```
+  # Create our state machine
+  def ourStateMachine(robotState):
+          
+      # The robot state is passed to the switcher object
+      switcher = {
+          0: goForwardsToWall(),
+          1: goBackwardsFromWall(),
+          2: robotSpin()
+          }
+      
+      # Defines error message if incorrect state is requested
+      return switcher.get(robotState, "Invalid State") 
+
+
+  #---------------------
+  # Start of main program
+  #---------------------
+
+  # Our starting message for the program
+  print("--------------")
+  print("Here is an example of how we write a message to the console")
+  print("Program starting !!")
+  print("--------------")
+
+  robotState = 0
+  NumberMovementsCount = 0
+
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  # ~~~~ MAKE YOUR EDITS BELOW HERE ~~~
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+
+      
+  while True:
+    ourStateMachine(robotState)
+      
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+  # ~~~~ END OF YOUR CODE EDITS ~~~
+  # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+      
+  stopRobotWheels()
+  ```
+    
   </div>
 </div>
 
