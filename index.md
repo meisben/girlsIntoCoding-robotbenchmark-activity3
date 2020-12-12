@@ -98,7 +98,7 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 * Click on the **Start** button next to the **Pick and place** activity
 * You should see the scene below
 
-![image0](images/pickAndPlaceScreenText.png)
+![image0](images/pickAndPlaceScreenText.jpg)
 
 * Have a look at the simulation at the top right hand side of the screen
 * How many behaviours can you see in the robot? Let's discuss this together
