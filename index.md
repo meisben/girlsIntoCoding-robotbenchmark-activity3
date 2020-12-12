@@ -75,6 +75,61 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 <br>
 <br>
 
+<!--Comment: This section is markdown again-->
+
+# What exactly are robot behaviours?
+---
+
+<!--Comment: End of markdown-->
+
+<!--Comment: Back to html bootstrap -->
+
+<div id="Activity0a" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #0a</h2>
+</div>
+
+<!--Comment: End of html bootstrap -->
+
+
+<!--Comment: Back to markdown -->
+
+* Let's take a look at what robot behaviours are!
+* Navigate to the [robotbenchmark](https://robotbenchmark.net/) website.
+* Click on the **Start** button next to the **Pick and place** activity
+* You should see the scene below
+* Have a look at the simulation at the top right hand side of the screen
+* How many behaviours can you see in the robot? Let's discuss this together
+* Some example answers are below
+
+
+<!--Comment: This section is markdown again-->
+
+# How do we program robot behaviours?
+---
+
+<!--Comment: End of markdown-->
+
+<!--Comment: Back to html bootstrap -->
+
+<div id="Activity0b" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #0b</h2>
+</div>
+
+<!--Comment: End of html bootstrap -->
+
+
+<!--Comment: Back to markdown -->
+
+* Let's have a look at how to program robot behaviours together!
+* Navigate to the [robotbenchmark](https://robotbenchmark.net/) website.
+* Click on the **Start** button next to the **Pick and place** activity
+* [(1) Robot behaviours with IF statements in python](https://repl.it/join/koipvszj-meisben)
+* [(2) Robot behaviours with functions in python](https://repl.it/join/gznuzhur-meisben)
+* [(3) Changing robot behaviours in python](https://repl.it/join/dighdlzf-meisben)
+* [(1) Robot behaviours with loops in python](https://repl.it/join/rmbdmrny-meisben)
+
+
+
 
 <!--Comment: This section is markdown again-->
 
