@@ -104,7 +104,6 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 * How many behaviours can you see in the robot? Let's discuss this together
 * Some example answers are below
 
-
 <!--Comment: This section is markdown again-->
 
 # How do we program robot behaviours?
@@ -127,7 +126,7 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 * [(1) Robot behaviours with IF statements in python](https://repl.it/join/koipvszj-meisben)
 * [(2) Robot behaviours with functions in python](https://repl.it/join/gznuzhur-meisben)
 * [(3) Changing robot behaviours in python](https://repl.it/join/dighdlzf-meisben)
-* [(1) Robot behaviours with loops in python](https://repl.it/join/rmbdmrny-meisben
+* [(4) Robot behaviours with loops in python](https://repl.it/join/rmbdmrny-meisben)
 
 
 
