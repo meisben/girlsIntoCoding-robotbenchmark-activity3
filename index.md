@@ -107,7 +107,7 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 * Some example answers are below
 
 
-<br>
+<!-- <br>
 
 <div class="container">
   <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo0a">Example Answer</button>
@@ -122,7 +122,7 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
   </div>
 </div>
 
-<br>
+<br> -->
 
 
 <!--Comment: This section is markdown again-->
@@ -144,7 +144,6 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 <!--Comment: Back to markdown -->
 
 * Let's have a look at how to program robot behaviours together!
-
 * [(1) Robot behaviours with IF statements in python](https://repl.it/join/koipvszj-meisben)
 * [(2) Robot behaviours with functions in python](https://repl.it/join/gznuzhur-meisben)
 * [(3) Changing robot behaviours in python](https://repl.it/join/dighdlzf-meisben)
