@@ -97,12 +97,33 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 * Navigate to the [robotbenchmark](https://robotbenchmark.net/) website.
 * Click on the **Start** button next to the **Pick and place** activity
 * You should see the scene below
+  
 
 ![image0](images/pickAndPlaceScreenText.jpg)
+
 
 * Have a look at the simulation at the top right hand side of the screen
 * How many behaviours can you see in the robot? Let's discuss this together
 * Some example answers are below
+
+
+<br>
+
+<div class="container">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo0a">Example Answer</button>
+  <div id="demo0a" class="collapse" markdown="1">
+
+* Moving forward
+* Moving the robot arm
+* Picking up an object
+* Turning
+* Dropping an object
+
+  </div>
+</div>
+
+<br>
+
 
 <!--Comment: This section is markdown again-->
 
@@ -123,6 +144,7 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 <!--Comment: Back to markdown -->
 
 * Let's have a look at how to program robot behaviours together!
+
 * [(1) Robot behaviours with IF statements in python](https://repl.it/join/koipvszj-meisben)
 * [(2) Robot behaviours with functions in python](https://repl.it/join/gznuzhur-meisben)
 * [(3) Changing robot behaviours in python](https://repl.it/join/dighdlzf-meisben)
