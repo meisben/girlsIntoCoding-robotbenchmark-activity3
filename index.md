@@ -151,37 +151,7 @@ We'll be using [ASCII Art](https://www.asciiart.eu/) to illustrate these concept
 
 If you get stuck at all, a great python tutorial resource is [here](https://www.w3schools.com/python/)!
 
-"""
-                                         |
-                                         |
-                                         |
-                                         |
-   _______                   ________    |
-  |ooooooo|      ____       | __  __ |   |
-  |[]+++[]|     [____]      |/  \/  \|   |
-  |+ ___ +|     ]()()[      |\__/\__/|   |
-  |:|   |:|   ___\__/___    |[][][][]|   |
-  |:|___|:|  |__|    |__|   |++++++++|   |
-  |[]===[]|   |_|_/\_|_|    | ______ |   |
-_ ||||||||| _ | | __ | | __ ||______|| __|
-  |_______|   |_|[::]|_|    |________|   \
-              \_|_||_|_/               jro\
-                |_||_|                     \
-               _|_||_|_                     \
-      ____    |___||___|                     \
-     /  __\          ____                     \
-     \( oo          (___ \                     \
-     _\_o/           oo~)/
-    / \|/ \         _\-_/_
-   / / __\ \___    / \|/  \
-   \ \|   |__/_)  / / .- \ \
-    \/_)  |       \ \ .  /_/
-     ||___|        \/___(_/
-     | | |          | |  |
-     | | |          | |  |
-     |_|_|          |_|__|
-     [__)_)        (_(___]
-"""
+![image0](images/ASCII_art_example.png)
 
 Let's have a look at how to program robot behaviours together!
 * [(1) Robot behaviours with IF statements in python](https://repl.it/join/koipvszj-meisben)
