@@ -149,7 +149,9 @@ Before we start to use the robot simulation, we're going to take a look at how w
 
 We'll be using [ASCII Art](https://www.asciiart.eu/) to illustrate these concepts !! 
 
+If you get stuck at all, a great python tutorial resource is [here](https://www.w3schools.com/python/)!
 
+"""
                                          |
                                          |
                                          |
@@ -179,8 +181,9 @@ _ ||||||||| _ | | __ | | __ ||______|| __|
      | | |          | |  |
      |_|_|          |_|__|
      [__)_)        (_(___]
+"""
 
-* Let's have a look at how to program robot behaviours together!
+Let's have a look at how to program robot behaviours together!
 * [(1) Robot behaviours with IF statements in python](https://repl.it/join/koipvszj-meisben)
 * [(2) Robot behaviours with functions in python](https://repl.it/join/gznuzhur-meisben)
 * [(3) Changing robot behaviours in python](https://repl.it/join/dighdlzf-meisben)
