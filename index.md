@@ -44,14 +44,16 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 <div class="container p-3 my-3 bg-primary">
 <h2>Contents</h2>
 <ul class="list-group">
-  <li class="list-group-item"><a href="#resourcesPanel">Resources</a></li>
-  <li class="list-group-item"><a href="#Activity1">Activity 1: Let’s get familiar with our robot</a></li>
-  <li class="list-group-item"><a href="#Activity2">Activity 2: Let’s make our robot move using python functions</a></li>
-  <li class="list-group-item"><a href="#Activity3">Activity 3: How the robot senses objects</a></li>
-  <li class="list-group-item"><a href="#Activity4">Activity 4: Changing the robot’s behaviour</a></li>
-  <li class="list-group-item"><a href="#Activity5">Activity 5: Making the robot respond to time instead of distance</a></li>
-  <li class="list-group-item"><a href="#Activity6">Activity 6: Making the robot change its movement type</a></li>
-  <li class="list-group-item"><a href="#Activity7">Activity 7: Creating a state machine</a></li>
+  <li class="list-group-item"><a href="#Activity1">Activity 1: What exactly are robot behaviours?</a></li>
+  <li class="list-group-item"><a href="#Activity2">Activity 2: How do we program robot behaviours?</a></li>
+  <li class="list-group-item"><a href="#Activity3">Activity 3: Let’s get familiar with our robot</a></li>
+  <li class="list-group-item"><a href="#Activity4">Activity 4: Let’s make our robot move using python functions</a></li>
+  <li class="list-group-item"><a href="#Activity5">Activity 5: How the robot senses objects</a></li>
+  <li class="list-group-item"><a href="#Activity6">Activity 6: Changing the robot’s behaviour</a></li>
+  <li class="list-group-item"><a href="#Activity7">Activity 7: Making the robot respond to time instead of distance</a></li>
+  <li class="list-group-item"><a href="#Activity8">Activity 8: Making the robot change its movement type</a></li>
+  <li class="list-group-item"><a href="#Activity9">Activity 9: Creating a state machine</a></li>
+  <li class="list-group-item"><a href="#Activity10">Activity 10: Changing the state machine behaviours</a></li>
 </ul>
 </div>
 
@@ -84,8 +86,8 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 
 <!--Comment: Back to html bootstrap -->
 
-<div id="Activity0a" class="container p-3 my-3 bg-primary text-primary">
-<h2>Activity #0a</h2>
+<div id="Activity1" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #1</h2>
 </div>
 
 <!--Comment: End of html bootstrap -->
@@ -134,8 +136,8 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 
 <!--Comment: Back to html bootstrap -->
 
-<div id="Activity0b" class="container p-3 my-3 bg-primary text-primary">
-<h2>Activity #0b</h2>
+<div id="Activity2" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #2</h2>
 </div>
 
 <!--Comment: End of html bootstrap -->
