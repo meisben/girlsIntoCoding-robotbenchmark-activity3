@@ -147,7 +147,7 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 
 Before we start to use the robot simulation, we're going to take a look at how we program simple robot behaviours in python! We can use this method in any programming language. We're going to be using if statements, functions and loops :) 
 
-We'll be using [ASCII Art](https://www.asciiart.eu/) to illustrate these concepts !! 
+We'll be using [ASCII Art](https://www.asciiart.eu/) to illustrate these concepts !! Because it's a really simple and fun way to introduce the topic.
 
 If you get stuck at all, a great python tutorial resource is [here](https://www.w3schools.com/python/)!
 
