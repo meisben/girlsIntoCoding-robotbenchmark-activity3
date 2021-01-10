@@ -160,8 +160,8 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 
 <!--Comment: Back to html bootstrap -->
 
-<div id="Activity1" class="container p-3 my-3 bg-primary text-primary">
-<h2>Activity #1</h2>
+<div id="Activity3" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #3</h2>
 </div>
 
 <!--Comment: End of html bootstrap -->
@@ -194,8 +194,8 @@ First we're going to get familiar with how we control our view of the 3D simulat
 
 
 <div class="container">
-  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo1">Answer</button>
-  <div id="demo1" class="collapse" markdown="1">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Answer</button>
+  <div id="demo3" class="collapse" markdown="1">
   There are 16 ultrasonic sensors, 4 at the front of the robot and 4 at the back!
   </div>
 </div>
@@ -213,8 +213,8 @@ First we're going to get familiar with how we control our view of the 3D simulat
 
 <!--Comment: Back to html bootstrap -->
 
-<div id="Activity2" class="container p-3 my-3 bg-primary text-primary">
-<h2>Activity #2</h2>
+<div id="Activity4" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #4</h2>
 </div>
 
 <!--Comment: End of html bootstrap -->
@@ -238,8 +238,8 @@ First we're going to get familiar with how we control our view of the 3D simulat
 * Have a look at the python functions that are making the robot move in the 'Start of main program' section of the code. We'll discuss these together!
 
 <div class="container">
-  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1a">Activity Base Code</button>
-  <div id="demo1a" class="collapse" markdown="1">
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo4a">Activity Base Code</button>
+  <div id="demo4a" class="collapse" markdown="1">
 
 ```python
 """
@@ -448,8 +448,8 @@ stopRobotWheels()
 
 <!--Comment: Back to html bootstrap -->
 
-<div id="Activity3" class="container p-3 my-3 bg-primary text-primary">
-<h2>Activity #3</h2>
+<div id="Activity5" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #5</h2>
 </div>
 
 <!--Comment: End of html bootstrap -->
@@ -477,8 +477,8 @@ stopRobotWheels()
 
 
 <div class="container">
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1b">Hint</button>
-  <div id="demo1b" class="collapse" markdown="1">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo5a">Hint</button>
+  <div id="demo5a" class="collapse" markdown="1">
   Try having a look at the function **getClosestObjectToRobot()** to see what it does!
   </div>
 </div>
@@ -486,8 +486,8 @@ stopRobotWheels()
 <br>
 
 <div class="container">
-  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo1c">Answer</button>
-  <div id="demo1c" class="collapse" markdown="1">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo5b">Answer</button>
+  <div id="demo5b" class="collapse" markdown="1">
 
   * The robot detects the wall when it is 1.5 meters away
   * The robot detects the wall using the ultrasonic sensors
@@ -506,8 +506,8 @@ stopRobotWheels()
 
 <!--Comment: Back to html bootstrap -->
 
-<div id="Activity4" class="container p-3 my-3 bg-primary text-primary">
-<h2>Activity #4</h2>
+<div id="Activity6" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #6</h2>
 </div>
 
 <!--Comment: End of html bootstrap -->
@@ -557,8 +557,8 @@ while True:
 <!--Comment: Back to html bootstrap -->
 
 <div class="container">
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Hint</button>
-  <div id="demo2" class="collapse" markdown="1">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo6a">Hint</button>
+  <div id="demo6a" class="collapse" markdown="1">
   For printing to the console, try having a look at the code line: print("hello :)")
 
   For the movement, try having a look at the "if statement"!
@@ -568,8 +568,8 @@ while True:
 <br>
 
 <div class="container">
-  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Example Answer</button>
-  <div id="demo3" class="collapse" markdown="1">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo6b">Example Answer</button>
+  <div id="demo6b" class="collapse" markdown="1">
 
   ```python
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
@@ -614,8 +614,8 @@ while True:
 
 <!--Comment: Back to html bootstrap -->
 
-<div id="Activity5" class="container p-3 my-3 bg-primary text-primary">
-<h2>Activity #5</h2>
+<div id="Activity7" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #7</h2>
 </div>
 
 <!--Comment: End of html bootstrap -->
@@ -667,8 +667,8 @@ while True:
 <!--Comment: Back to html bootstrap -->
 
 <div class="container">
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Hint</button>
-  <div id="demo2" class="collapse" markdown="1">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo7a">Hint</button>
+  <div id="demo7a" class="collapse" markdown="1">
   Look at the line *"robot.step(500)"*. This is the number of milliseconds that passes each time the robot moves. If we count these milliseconds we can change the IF statement!
   </div>
 </div>
@@ -676,8 +676,8 @@ while True:
 <br>
 
 <div class="container">
-  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Example Answer</button>
-  <div id="demo3" class="collapse" markdown="1">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo7b">Example Answer</button>
+  <div id="demo7b" class="collapse" markdown="1">
 
 ```python
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
@@ -725,8 +725,8 @@ while True:
 
 <!--Comment: Back to html bootstrap -->
 
-<div id="Activity6" class="container p-3 my-3 bg-primary text-primary">
-<h2>Activity #6</h2>
+<div id="Activity8" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #8</h2>
 </div>
 
 <!--Comment: End of html bootstrap -->
@@ -783,8 +783,8 @@ while True:
 <br>
 
 <div class="container">
-  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">Example Answer</button>
-  <div id="demo3" class="collapse" markdown="1">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo8">Example Answer</button>
+  <div id="demo8" class="collapse" markdown="1">
   
 ```python
 # ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
@@ -841,8 +841,8 @@ while True:
 
 <!--Comment: Back to html bootstrap -->
 
-<div id="Activity7" class="container p-3 my-3 bg-primary text-primary">
-<h2>Activity #7</h2>
+<div id="Activity9" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #9</h2>
 </div>
 
 <!--Comment: End of html bootstrap -->
@@ -875,8 +875,8 @@ while True:
 * Have a look at the python functions that are making the robot move in the **'Our States'** and **'Our State Machine'** section of the code
 
 <div class="container">
-  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo7">State Machine Code</button>
-  <div id="demo7" class="collapse" markdown="1">
+  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo9">State Machine Code</button>
+  <div id="demo9" class="collapse" markdown="1">
 
 ```python
 """
@@ -1163,8 +1163,8 @@ stopRobotWheels()
 
 <!--Comment: Back to html bootstrap -->
 
-<div id="Activity8" class="container p-3 my-3 bg-primary text-primary">
-<h2>Activity #8</h2>
+<div id="Activity10" class="container p-3 my-3 bg-primary text-primary">
+<h2>Activity #10</h2>
 </div>
 
 <!--Comment: End of html bootstrap -->
@@ -1225,8 +1225,8 @@ def robotSpin():
 [![image9](images/image9.png)](images/image9.png)
 
 <div class="container">
-  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo8">Example Answer</button>
-  <div id="demo8" class="collapse" markdown="1">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo10">Example Answer</button>
+  <div id="demo10" class="collapse" markdown="1">
 
 ```python
 
