@@ -145,6 +145,41 @@ The idea with this acitivity isn't to become an ACE python programmer in 1 hour,
 
 <!--Comment: Back to markdown -->
 
+Before we start to use the robot simulation, we're going to take a look at how we program simple robot behaviours in python! We can use this method in any programming language. We're going to be using if statements, functions and loops :) 
+
+We'll be using [ASCII Art](https://www.asciiart.eu/) to illustrate these concepts !! 
+
+
+                                         |
+                                         |
+                                         |
+                                         |
+   _______                   ________    |
+  |ooooooo|      ____       | __  __ |   |
+  |[]+++[]|     [____]      |/  \/  \|   |
+  |+ ___ +|     ]()()[      |\__/\__/|   |
+  |:|   |:|   ___\__/___    |[][][][]|   |
+  |:|___|:|  |__|    |__|   |++++++++|   |
+  |[]===[]|   |_|_/\_|_|    | ______ |   |
+_ ||||||||| _ | | __ | | __ ||______|| __|
+  |_______|   |_|[::]|_|    |________|   \
+              \_|_||_|_/               jro\
+                |_||_|                     \
+               _|_||_|_                     \
+      ____    |___||___|                     \
+     /  __\          ____                     \
+     \( oo          (___ \                     \
+     _\_o/           oo~)/
+    / \|/ \         _\-_/_
+   / / __\ \___    / \|/  \
+   \ \|   |__/_)  / / .- \ \
+    \/_)  |       \ \ .  /_/
+     ||___|        \/___(_/
+     | | |          | |  |
+     | | |          | |  |
+     |_|_|          |_|__|
+     [__)_)        (_(___]
+
 * Let's have a look at how to program robot behaviours together!
 * [(1) Robot behaviours with IF statements in python](https://repl.it/join/koipvszj-meisben)
 * [(2) Robot behaviours with functions in python](https://repl.it/join/gznuzhur-meisben)
